@@ -1,5 +1,5 @@
 # Restaurant Website Concept
 
-This repository is made to showcase a mock-up website template that can be used for small to medium sized restaurant businesses. This template's design and implementation is for a Static website and is intended to be a simple, effective approach for restaurant owners who want to improve their visibility and sales without having to commit to  more expensive, higher management solutions (Dynamic website, CMS).
+This repository is made to showcase a mock-up website template for small to medium sized restaurant businesses. The template's design is for a static websites and is intended as a simple and effective option. Allows restaurant owners to improve their visibility and revenue without having to commit to a higher management solutions (Dynamic website, CMS) that costs far more to create and maintain.
 
-(Will update project documentation as I go along)
+(Documentation updates as project progresses).
