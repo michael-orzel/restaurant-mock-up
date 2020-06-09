@@ -1,12 +1,12 @@
-const icon = document.querySelector('.nav-icon');
+const bars = document.querySelector('.fa-bars');
 
-function toggleMenu() {
-  var navmenu = document.getElementById('nav-links');
-  if (navmenu.style.display === "block") {
-    navmenu.style.display = "none";
+function toggleDropdown() {
+  const navDropdown = document.getElementById('nav-dropdown');
+  if (navDropdown.style.display === "block") {
+    navDropdown.style.display = "none";
   } else {
-    navmenu.style.display = "block";
+    navDropdown.style.display = "block";
   }
 }
 
-icon.addEventListener('click', toggleMenu);
+bars.addEventListener('click', toggleDropdown);
