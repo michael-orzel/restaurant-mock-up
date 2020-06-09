@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding-top: 7rem;
-  margin 0;
+  margin: 0;
 }
 
 .container {
@@ -69,25 +69,21 @@ ul {
   flex-grow: 2;
 }
 
-.nav-icon {
+.nav-bars {
   color: var(--txt);
   background: var(--bg);
   font-size: 1.25rem;
   padding: 2.75rem 2rem 2.75rem 2rem;
 }
 
-.nav-icon:hover {
+.nav-bars:hover {
   color: var(--txt-contrast);
   background: var(--bg-lightest);
 }
 
-.nav-icon:active {
+.nav-bars:active {
   color: var(--txt);
   background: var(--bg-darker);
-}
-
-#nav-links {
-  display: none;
 }
 
 .nav ul {
@@ -126,6 +122,10 @@ ul {
 .nav [aria-current=page] {
   color: var(--txt-contrast);
   background: var(--bg-lighter);
+}
+
+.nav-dropdown { /* add css, darken screen */
+  display: block;
 }
 
 /* Footer */
@@ -242,3 +242,21 @@ input[type="submit"] {
     justify-content: space-evenly;
   }
 }
+
+/*
+https://www.orbitmedia.com/blog/web-design-standards/
+https://www.orbitmedia.com/blog/website-footer-design-best-practices/
+https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-multi-level-sticky-footer-with-flexbox--cms-33341
+
+WAI
+https://www.w3.org/WAI/tutorials/menus/
+
+Basics:
+https://pos.toasttab.com/blog/7-things-restaurant-websites-need-to-include
+
+Essential Copywriting Tips for Important Pages:
+https://blog.hubspot.com/marketing/copywriting-tips-for-website-ht
+
+Visual Story Telling:
+https://medium.com/visual-stories/10-simple-rules-of-visual-storytelling-4ee868498447#.xfo8kfi1v
+*/
