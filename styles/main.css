@@ -56,7 +56,7 @@ ul {
   border-radius: 0.0625rem;
   overflow: hidden;
   box-shadow: 0 0.0625rem 0.0625rem 0.0625rem rgba(0,0,0,.1);
-  z-index: 1;
+  z-index: 10;
 }
 
 .nav-logo {
@@ -74,6 +74,7 @@ ul {
   background: var(--bg);
   font-size: 1.25rem;
   padding: 2.75rem 2rem 2.75rem 2rem;
+  cursor: pointer;
 }
 
 .nav-bars:hover {
@@ -125,7 +126,24 @@ ul {
 }
 
 .nav-dropdown { /* add css, darken screen */
-  display: block;
+  display: none;
+  position: absolute;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.overlay { /* transition */
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 9;
+  cursor: pointer;
 }
 
 /* Footer */

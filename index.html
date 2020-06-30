@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Restaurant Mock-Up</title>
+    <title>Restaurant Website Concept</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <script src="https://kit.fontawesome.com/26e96b4f88.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="main.js" defer></script> <!-- defer/async -->
   </head>
   <body>
+    <div class="overlay"></div>
       <header>
         <nav class="nav" role="navigation" aria-label="Main Navigation">
           <div class="nav-logo">
@@ -24,9 +25,9 @@
           </div>
           <div class="nav-filler"></div>
           
-          <a href="" class="nav-bars"> <!-- change anchor to button? for click listener-->
+          <button type="button" class="nav-bars">
             <i class="fas fa-bars"></i>
-          </a>
+          </button>
         </nav>
         
         <nav class="nav-dropdown" role="navigation" aria-label="Main Navigation Dropdown">
