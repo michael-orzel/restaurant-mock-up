@@ -125,14 +125,53 @@ ul {
   background: var(--bg-lighter);
 }
 
-.nav-dropdown { /* add css, darken screen */
+.nav-dropdown { /* add css */
   display: none;
   position: absolute;
   background: var(--bg);
   z-index: 10;
 }
+ /* dropdown nav li's */
+.nav-dropdown ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-.overlay { /* transition */
+.nav-dropdown ul li {
+  list-style: none;
+}
+
+.nav-dropdown ul li a { /* here */
+  display: block;
+  color: var(--txt);
+  font-size: 1.25rem;
+  font-weight: 700;
+  min-width: 15rem;
+  padding: 3rem 2rem 3rem 2rem;
+  text-decoration: none;
+}
+
+.nav-dropdown ul li a:hover {
+  color: var(--txt-contrast);
+  background: var(--bg-lightest);
+  text-decoration: underline;
+}
+
+.nav-dropdown ul li a:active {
+  color: var(--txt);
+  background: var(--bg-darker);
+}
+
+.nav-dropdown [aria-current=page] {
+  color: var(--txt-contrast);
+  background: var(--bg-lighter);
+}
+/* end dropdown nav li's */
+
+.overlay {
   position: fixed;
   display: none;
   width: 100%;
@@ -141,9 +180,9 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 9;
+  background: rgba(0,0,0,0.7);
   cursor: pointer;
+  z-index: 9;
 }
 
 /* Footer */
