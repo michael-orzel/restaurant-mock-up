@@ -125,11 +125,16 @@ ul {
   background: var(--bg-lighter);
 }
 
-.nav-dropdown { /* add css */
+.nav-dropdown { /* add css, STOP MAIN PAGE SCROLL */
   display: none;
   position: absolute;
   background: var(--bg);
-  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  border-radius: 0.0625rem;
+  overflow: auto;
+  z-index: 12;
 }
  /* dropdown nav li's */
 .nav-dropdown ul {
@@ -144,7 +149,7 @@ ul {
   list-style: none;
 }
 
-.nav-dropdown ul li a { /* here */
+.nav-dropdown ul li a {
   display: block;
   color: var(--txt);
   font-size: 1.25rem;
@@ -182,7 +187,7 @@ ul {
   bottom: 0;
   background: rgba(0,0,0,0.7);
   cursor: pointer;
-  z-index: 9;
+  z-index: 11;
 }
 
 /* Footer */
